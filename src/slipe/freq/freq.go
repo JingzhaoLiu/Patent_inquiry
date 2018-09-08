@@ -4,8 +4,12 @@ import (
 	"strconv"
 )
 
+// k 表格行数
+// content 数据（数组）
+
 func SplicFreq(content []string, k string) map[string]string {
 	contentMap := make(map[string]string)
+	str := ""
 	count := 1
 	// content := []string{"实用", "专利", "专利", "专利", "专利",
 	// 	"专利", "专利", "实用", "实用", "实用"}
@@ -26,10 +30,13 @@ func SplicFreq(content []string, k string) map[string]string {
 		}
 
 		// fmt.Printf("%s %d \n", content[i], count)
-		contentMap[k] = content[i] + strconv.Itoa(count)
+		str += content[i] + strconv.Itoa(count) + " "
 		count = 1
 
 	}
+
+	contentMap[k] = str
+	// fmt.Println(contentMap)
 
 	return contentMap
 

@@ -34,10 +34,10 @@ func Write(obj map[string]string) {
 
 	for s, val := range obj {
 
+		xlsx.SetCellValue("Sheet1", "D"+s, val)
+
 		fmt.Println("Sheet1", "D"+s, val)
 
-		xlsx.SetCellValue("Sheet1", "D"+s, val)
-		fmt.Println(s)
 	}
 
 	err = xlsx.SaveAs("./excopy.xlsx")
