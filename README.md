@@ -89,7 +89,7 @@ v3.0改为`申请公布号CN2511690Y`,通过第三位判断。现为`2` 实用�
 
 2. excopy.xlsx是ex.xlsx的复制文件
 
-3. 把文件 ex.xlsx和excopy.xlsx 放到slipe.go同一个文件夹下
+3. 把文件 ex.xlsx和excopy.xlsx 放到slipe.go同一个文件夹下,运行 `go run slipe.go` 。MAC下可以把文件 ex.xlsx和excopy.xlsx 放到bin中，点击编译好的文件 `bin/slipe`。  
 
 4. 写入时会写入到D列，D1、 D2、 D3依次排列
 
